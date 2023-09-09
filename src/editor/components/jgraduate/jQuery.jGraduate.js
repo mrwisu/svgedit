@@ -625,10 +625,12 @@ export function jGraduateMethod (elem, options, okCallback, cancelCallback, i18n
         stop.setAttribute('stop-color', stopColor)
         stop.setAttribute('stop-opacity', stopOpacity)
         $this.querySelector('#jGraduate_LightBox').style.display = 'none'
-        $this.querySelector('#' + id + '_jGraduate_stopPicker').style.display = 'none'
+        jqPickerElem.style.display = 'none'
+        jqPickerElem.innerHTML = ""
       }, null, function () {
         $this.querySelector('#jGraduate_LightBox').style.display = 'none'
-        $this.querySelector('#' + id + '_jGraduate_stopPicker').style.display = 'none'
+        jqPickerElem.style.display = 'none'
+        jqPickerElem.innerHTML = ""
       },
       i18next
       )
